@@ -1,0 +1,2 @@
+rootProject.name='SimpleFit'
+include ':app'
