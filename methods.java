@@ -1,0 +1,1 @@
+Default interface methods are only supported starting with Android N (--min-api 24)

@@ -1,0 +1,129 @@
+.game-container {
+  display: none;
+  height: 552px;
+  width: 422px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+canvas {
+  height: 552px;
+  width: 422px;
+  display: block;
+  border-radius: 7px;
+  background: url('../images/main_bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#scoreBoard {
+  width: 50%;
+  height: 50px;
+  padding: 20px;
+  position: absolute;
+  top: -3px;
+  left: auto;
+  z-index: -1;  
+  touch-action: manipulation;
+}
+
+#scoreBoard p {
+  font-size: 3vw;
+  padding: 0;
+  line-height: 47px;
+  margin: 0px 0 0 5px;
+  touch-action: manipulation;
+}
+
+#timerBoard {
+  width: 50%;
+  height: 50px;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  z-index: -1;  
+  float: right;
+  text-align: right;
+  touch-action: manipulation;
+}
+
+#timerBoard img {
+  display: inline-block;
+  touch-action: manipulation;
+}
+
+#timerBoard p {
+  font-size: 3vw;
+  padding: 0;
+  line-height: 47px;
+  padding-right: 55px;
+  height: 70px;
+  text-align: right;
+  display: inline-block;
+  touch-action: manipulation;
+}
+
+#virtual-buttons {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background-color: #9fc211;
+  display: block;
+  z-index: 1000;
+  display: inline-block;
+  touch-action: manipulation;
+}
+
+#scoreBoard p {
+  padding-left: 10px;
+  height: 70px;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 70px;
+  touch-action: manipulation;
+}
+
+#scoreBoard img {
+  display: inline-block;
+  vertical-align: middle;
+  touch-action: manipulation;
+}
+
+#timerBoard img {
+  display: inline-block;
+  vertical-align: middle;
+  touch-action: manipulation;
+}
+
+#timerBoard p {
+  font-size: 20px;
+  padding: 0;
+  line-height: 70px;
+  margin: 0px 0 0 5px;
+  padding-right: 15px;
+  height: 70px;
+  width: 60px;
+  text-align: right;
+  display: inline-block;
+  touch-action: manipulation;
+}
+
+
+#button-left {
+  display: none;
+  margin-left: 15px;
+  touch-action: manipulation;
+
+}
+
+#button-right {
+  display: none;
+  float: right;
+  margin-right: 15px;
+  color: #1c3310;
+  touch-action: manipulation;
+}
+
