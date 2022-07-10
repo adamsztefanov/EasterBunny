@@ -2,21 +2,17 @@ package com.sztefanov.simplefit;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.os.Build;
 import android.os.Bundle;
+import android.webkit.ConsoleMessage;
 import android.webkit.CookieManager;
+import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
-
-import androidx.annotation.RequiresApi;
-
-import com.sztefanov.ajaxbridge.AjaxBridge;
 
 public class MainActivity extends Activity {
 
     private WebView mWebView;
 
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     @SuppressLint("SetJavaScriptEnabled")
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +29,15 @@ public class MainActivity extends Activity {
             mWebView.restoreState(savedInstanceState);
         }
 
-        mWebView.setWebViewClient(new MyWebViewClient());
+        mWebView.setWebChromeClient(new WebChromeClient() {
+            @Override
+            public boolean onConsoleMessage(ConsoleMessage consoleMessage) {
+                android.util.Log.d("WebView", consoleMessage.message());
+                return true;
+            }
+        });
+
+        //mWebView.setWebViewClient(new MyWebViewClient());
 
         // REMOTE RESOURCE
         //mWebView.loadUrl("https://ebooking.com");
@@ -42,8 +46,8 @@ public class MainActivity extends Activity {
         //
         // local connector to backend
         // this way we can store on the device locally in backend accessing java
-        //Thread thread = new Thread(new AjaxBridge());
-        //thread.start();
+        Thread thread = new Thread(new AjaxBridgeImpl());
+        thread.start();
 
         mWebView.loadUrl("file:///android_asset/index.html");
     }

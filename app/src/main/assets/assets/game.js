@@ -1,3 +1,5 @@
+testQuery();
+
 function endGame() {
   if (playing) {
     // TODO! restart game on end :-)
