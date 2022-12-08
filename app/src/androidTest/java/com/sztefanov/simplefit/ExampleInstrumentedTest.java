@@ -1,4 +1,4 @@
-package com.sztefanov.simplefit;
+package com.sztefanov.mobilenn;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
     // Context of the app under test.
     Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-    assertEquals("com.sztefanov.simplefit", appContext.getPackageName());
+    assertEquals("com.sztefanov.mobilenn", appContext.getPackageName());
   }
 }

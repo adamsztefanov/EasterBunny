@@ -154,7 +154,11 @@ let countdown = null;
 
 // RequestAnimFrame: a browser API for getting smooth animations
 window.requestAnimFrame = (function () {
-  return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
+  return window.requestAnimationFrame ||
+  window.webkitRequestAnimationFrame ||
+  window.mozRequestAnimationFrame ||
+  window.oRequestAnimationFrame ||
+  window.msRequestAnimationFrame ||
           function (callback) {
             window.setTimeout(callback, 1000 / 60);
           };

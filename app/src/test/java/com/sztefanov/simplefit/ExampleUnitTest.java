@@ -1,4 +1,4 @@
-package com.sztefanov.simplefit;
+package com.sztefanov.mobilenn;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.sztefanov.simplefit;
+package com.sztefanov.mobilenn;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;

@@ -1,10 +1,10 @@
-package com.sztefanov.simplefit;
+-package com.sztefanov.simplefit;
 import com.sztefanov.ajaxbridge.AjaxBridge;
 
 public class AjaxBridgeImpl extends AjaxBridge {
 
-    public AjaxBridgeImpl() {
-        super();
-    }
+  public AjaxBridgeImpl() {
+    super();
+  }
 
 }
