@@ -1,30 +1,40 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-    <link href="assets/fontawesome/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/nyuszilib.css">
-    <link rel="stylesheet" href="assets/game.css">
-    <script type="text/javascript" src="assets/jquery.min.js"></script>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="width=device-width, 
+          initial-scale=1, 
+          maximum-scale=1, 
+          user-scalable=0"/>
+    <title>EasterBunny</title>
+    <link href="assets/fontawesome/css/all.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/nyuszilib.css"/>
+    <link rel="stylesheet" href="assets/game.css"/>
   </head>
   <body>
     <div class="game-container">
-      <a id="closegame" href="index.php"><img src="images/close-btn.png"></a>
+      <a id="closegame" href="/">
+        <img src="images/close-btn.png" alt="Close game"/>
+      </a>
       <canvas id="canvas">
         Aww Snap! Unfortunately your device not support this game.
       </canvas>
-      <img id="sprite" src="images/sprites.png"/>
+      <img id="sprite" alt="sprites" src="images/sprites.png"/>
       <div id="scoreBoard">
-        <img src="images/points.png"><p id="score">0</p>
+        <img src="images/points.png" alt="points"/>
+        <p id="score">0</p>
       </div>
       <div id="timerBoard">
-        <img src="images/timer.png"><p id="timer">120</p>
+        <img src="images/timer.png" alt="timer">
+        <p id="timer">120</p>
       </div>
     </div>
     <div id="virtual-buttons">
       <i id="button-left" class="fas fa-7x fa-caret-square-left"></i>
-      <i id="button-right" class="fas fa-7x fa-caret-square-right"></i> 
+      <i id="button-right" class="fas fa-7x fa-caret-square-right"></i>
     </div>
+    <script src="assets/jquery.min.js"></script>
     <script src="assets/functions.js"></script>
     <script src="assets/game.js"></script>
   </body>

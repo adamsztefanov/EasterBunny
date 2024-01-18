@@ -1,12 +1,12 @@
 @font-face {
   font-family: "mplusrounded1c-medium";
-  src: 
+  src:
     url("../fonts/mplusrounded1c-medium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "mplusrounded1c-bold";
-  src: 
+  src:
     url("../fonts/mplusrounded1c-bold.ttf") format("truetype");
 }
 
@@ -17,7 +17,9 @@
     url("../fonts/museo700.ttf") format("truetype");
 }
 
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 
 html, body {
   margin: 0 auto;
@@ -25,7 +27,8 @@ html, body {
 }
 
 body {
-  margin: 0 auto; padding: 0;
+  margin: 0 auto;
+  padding: 0;
   font-family: "mplusrounded1c-medium";
   background-color: #71e3eb;
   background: url('../images/main_bg.png');
@@ -41,7 +44,7 @@ body {
 
 #wrapper , .wrapper{
   width: 100%;
-  float: left;	
+  float: left;
 }
 
 .container {
@@ -58,7 +61,6 @@ body {
   background-position: center bottom;
   background-repeat: no-repeat;
   height: 309px;
-  margin-top: -10px;
   z-index: 10;
   margin-top: 40px;
 }
@@ -114,11 +116,11 @@ body {
 }
 
 #logo {
-  text-align: center;	
+  text-align: center;
 }
 
 #logo a img {
-  margin: auto;	
+  margin: auto;
 }
 
 #menu {
@@ -142,6 +144,7 @@ body {
 }
 
 #closegame {
+  display: none;
   z-index: 9999;
   position: absolute;
 }
@@ -156,7 +159,8 @@ body {
 #kezdolap {
   width: 100%;
   float: left;
-  padding-top: 100px;  padding-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 #kezdolap h2 {
@@ -169,7 +173,7 @@ body {
   padding: 30px 10px;
   margin: 25px auto 100px auto;
   color: #16270e;
-  font-size: 36px; 
+  font-size: 36px;
 }
 
 .forgotten-div {
@@ -335,16 +339,11 @@ form {
 
 #new-password-form input[type="submit"] {
   min-width: 150px;
-  height: 35px;
   background-color: #16270e;
   display: block;
   color:  #8fb910;
-  font-size: 32px;
   line-height: 32px;
   text-decoration: none;
-  position: absolute;
-  left: 50%;
-  bottom: 50px;
   border-radius: 9px;
   font-family: "mplusrounded1c-bold";
   cursor: pointer;
@@ -386,7 +385,7 @@ form {
   background-repeat: no-repeat;
   padding: 2px 10px;
   margin: 25px auto;
-  color: #16270e;	
+  color: #16270e;
 }
 
 .check-span {
@@ -432,7 +431,7 @@ form {
   line-height: 32px;
   background-color: #16270e!important;
   display: block;
-  color:  #8fb910!important; 
+  color:  #8fb910!important;
   border-radius: 9px;
   font-family: "mplusrounded1c-bold";
   cursor: pointer;
@@ -532,7 +531,7 @@ form {
 }
 
 #loggedindiv .row {
-  padding-bottom: 30px;	
+  padding-bottom: 30px;
 }
 
 .unique-line-height {
@@ -560,7 +559,7 @@ form {
   line-height: 32px;
   background-color: #16270e;
   display: block;
-  color:  #8fb910; 
+  color:  #8fb910;
   border-radius: 9px;
   font-family: "mplusrounded1c-bold";
   cursor: pointer;
@@ -654,7 +653,7 @@ form {
 }
 
 #pswModal2 form  {
-  padding-top: 60px;	
+  padding-top: 60px;
 }
 
 #pswModal form button, #pswModal2 form input[type="submit"]  {
@@ -693,13 +692,9 @@ form {
 }
 
 @media (max-width: 1024px) {
+
   .col-md-6 {
     width: 100%;
-  }
-
-  body {
-    /* 	  background-position: initial;
-              background-size: cover; */
   }
 
   #login-form input[type="checkbox"], #register-form input[type="checkbox"] {
@@ -719,13 +714,10 @@ form {
 }
 
 @media (max-height:800px) and (orientation: landscape) {
+
   #header {
     height: 100px;
     margin-top: 20px;
-  }
-
-  body {
-    /*     background-position: center center; */
   }
 
   #logo {
@@ -735,7 +727,7 @@ form {
   }
 
   #logo a img {
-    height: 100px;		
+    height: 100px;
   }
 
   #menu {
@@ -743,10 +735,6 @@ form {
     float: left;
   }
 
-}
-
-#closegame {
-  display: none;
 }
 
 .navbar-brand img {
@@ -772,17 +760,18 @@ form {
   }
 
   #login-form label, #register-form label {
-    font-size: 16px;	
+    font-size: 16px;
   }
 
-  #login-form button, #register-form button, #loggedindiv button, #loggedindiv a.button, #tabella_tablak a.button {
+  #login-form button, #register-form button, #loggedindiv button,
+  #loggedindiv a.button, #tabella_tablak a.button {
     font-size: 16px;
     height: 50px;
     line-height: 45px;
   }
 
   #tabella_tablak a.button {
-    padding-top: 4px;	
+    padding-top: 4px;
   }
 
   #loggedindiv a.button {
@@ -808,7 +797,7 @@ form {
     position: relative;
     margin-top: -50px;
     margin-bottom: 0px;
-    display: block;	
+    display: block;
   }
 
   #header {
@@ -822,7 +811,7 @@ form {
   }
 
   #logo {
-    margin-top: 10px;	
+    margin-top: 10px;
   }
 
   #menu  {
@@ -874,7 +863,10 @@ form {
   }
 
   #scoreBoard {
-    background-image:url(./images/points.png);background-repeat:no-repeat;background-position:left center;background-size: 22.5px 30px;
+    background-image:url(./images/points.png);
+    background-repeat:no-repeat;
+    background-position:left center;
+    background-size: 22.5px 30px;
     padding-left: 35px;
     height: 40px;
   }
@@ -971,12 +963,13 @@ form {
     margin: auto;
     padding-bottom: 10px;
   }
-
-
 }
 
 
-.text-muted { display: none; color: red!important; }
+.text-muted {
+  display: none;
+  color: red!important;
+}
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .row {
@@ -990,4 +983,6 @@ form {
   padding-top: 7%;
 }
 
-.nyerimg{max-height: 250px;}
+.nyerimg {
+  max-height: 250px;
+}
